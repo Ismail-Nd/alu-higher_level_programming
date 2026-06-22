@@ -6,6 +6,8 @@ data = int(input("Enter the number of seconds: "))
 
 ## We will then calculate the number of days, hours, minutes, seconds.
 
+days = data // 86400
+total = data % 86400
 hours = data // 3600 
 data = data % 3600
 minutes = data // 60
