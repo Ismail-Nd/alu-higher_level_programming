@@ -10,24 +10,26 @@ import pandas as pd
 
 # students = ['John', 'Jane', 'Jim', 'Jill']
 
-df = pd.read_csv('labels.csv')
-print(df.head())
-print(df.columns)
-
+df = pd.read_csv('imdb.csv')
+while True: 
+    user_movie = input('Search a movie you want: ')
+    found = False
 #     print(f'Student is {student}')
 
 # print(f'All students have been printed')
 
 #Using break and continue
 
-for name in df['image_name']:
-    print(f'Searching  animal cat...')
-    if name == 'caterpillar/4f787826ad.jpg':
-        print(f'cat found')
-        break
-    else:
-        print(f'cat not found')
+    for movie in df['title']:
+        if movie == user_movie:
+            print(f'Your movie is found: {movie}')
+            found = True
+            break
+    if not found:
+        print(f"Your movie doesn't exist in this dataset")
         continue
+    break
+
 
 # while True:
 #     try:
