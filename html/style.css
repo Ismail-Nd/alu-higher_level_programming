@@ -1,49 +1,22 @@
-<style>
-input[type=text]
-
-textarea {
- border: 2px solid aquamarine;
+<style>input[type=text] textarea {
+    border: 2px solid aquamarine;
 }
-    </style>r: blue;r
 
+</style>r: blue;
 
-<style>
-form {
-    background color:beige;
-    
+r <style>form {
+    background color: beige;
+
 }
 
 .lowwer {
     display: flex;
 }
 
+#thanks {
+    background: #000;
+    color: white;
+    padding: 20px;
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
